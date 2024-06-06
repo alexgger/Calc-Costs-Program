@@ -50,8 +50,7 @@ namespace CalculationСostsProgram
             }
         }
 
-        private void SaveSettings()
-        {
+        private void SaveSettings() {
             string saveSettings = "";
             foreach(var item in tempCBox)
             {
@@ -62,8 +61,7 @@ namespace CalculationСostsProgram
             Settings.Default.Save();
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e) {
             SaveSettings();
         }
 
@@ -144,19 +142,19 @@ namespace CalculationСostsProgram
             {
                 if (CalcB_TextLabel.Text == "")
                 {
-                    MessageBox.Show("Не расчитан B", "Ошибка расчетов", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Не рассчитан B", "Ошибка расчетов", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 if (MPLabel.Text == "")
                 {
-                    MessageBox.Show("Не расчитан MP", "Ошибка расчетов", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Не рассчитан MP", "Ошибка расчетов", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 if (AUTO_DEDUCTIONS.Text == "")
                 {
-                    MessageBox.Show("Не расчитан ЗАТРАТЫ (КОЭФФИЦЕНТЫ)", "Ошибка расчетов", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Не рассчитан ЗАТРАТЫ (КОЭФФИЦЕНТЫ)", "Ошибка расчетов", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
